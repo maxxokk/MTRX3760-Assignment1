@@ -13,8 +13,11 @@ sudo apt install -y ros-jazzy-rviz2 ros-jazzy-ros2launch
 git clone git@github.com:maxxokk/MTRX3760-Assignment1.git
 
 cd MTRX3760-Assignment1 
+
 source /opt/ros/jazzy/setup.bash
+
 colcon build --symlink-install
+
 source install/setup.bash
 
 ## Run (GUI + RViz by default)

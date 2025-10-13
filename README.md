@@ -4,6 +4,7 @@
 
 ## Prereqs (Ubuntu 24.04 / ROS 2 Jazzy)
 sudo apt update
+
 sudo apt install -y ros-jazzy-desktop ros-jazzy-ros-gz git python3-colcon-common-extensions
 
 # optional but useful

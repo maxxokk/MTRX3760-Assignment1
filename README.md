@@ -10,8 +10,8 @@ sudo apt install -y ros-jazzy-desktop ros-jazzy-ros-gz git python3-colcon-common
 sudo apt install -y ros-jazzy-rviz2 ros-jazzy-ros2launch
 
 ## Clone & Build
-git clone git@github.com:maxxokk/MTRX3760-Assignment1.git
-cd MTRX3760-Assignment1
+git clone git@github.com:maxxokk/MTRX3760-Assignment1.git \n
+cd MTRX3760-Assignment1 \n
 source /opt/ros/jazzy/setup.bash
 colcon build --symlink-install
 source install/setup.bash

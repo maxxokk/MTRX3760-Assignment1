@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <world name="default">
+    <model name="ground"><static>true</static><link name="l">
+      <collision name="c"><geometry><plane><normal>0 0 1</normal><size>200 200</size></plane></geometry></collision>
+      <visual    name="v"><geometry><plane><normal>0 0 1</normal><size>200 200</size></plane></geometry></visual>
+    </link></model>
+    <light type="directional" name="sun">
+      <pose>0 0 10 0 0 0</pose><direction>-0.5 0.5 -1</direction>
+    </light>
+
+    <!-- Your maze, which includes the local box walls -->
+    <include><uri>model://maze</uri><name>maze</name><pose>0 0 0 0 0 0</pose></include>
+  </world>
+</sdf>

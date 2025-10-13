@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <model name="nist_maze_wall_120_box">
+    <static>true</static>
+    <pose>0 0 0.6 0 0 0</pose> <!-- 1.2 m tall, centered -->
+    <link name="wall">
+      <collision name="collision"><geometry><box><size>1.2 0.12 1.2</size></box></geometry></collision>
+      <visual    name="visual"  ><geometry><box><size>1.2 0.12 1.2</size></box></geometry></visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,77 @@
+from launch import LaunchDescription
+from launch.actions import DeclareLaunchArgument, SetEnvironmentVariable
+from launch.conditions import IfCondition, UnlessCondition
+from launch.substitutions import LaunchConfiguration, Command, PathJoinSubstitution, TextSubstitution
+from launch_ros.actions import Node
+from launch_ros.substitutions import FindPackageShare
+
+def generate_launch_description():
+    use_gui    = LaunchConfiguration('use_gui')
+    with_rviz  = LaunchConfiguration('with_rviz')
+    robot_name = LaunchConfiguration('robot_name')
+
+    maze_share = FindPackageShare('maze_simulation')
+    tb3_desc   = FindPackageShare('turtlebot3_description')
+    tb3_gz     = FindPackageShare('turtlebot3_gazebo')
+
+    world      = PathJoinSubstitution([maze_share, 'worlds', 'maze.world'])   # change to 'maze.sdf' if needed
+    rviz_cfg   = PathJoinSubstitution([maze_share, 'rviz', 'maze_tb3.rviz'])
+    robot_urdf = PathJoinSubstitution([tb3_desc, 'urdf', 'turtlebot3_burger.urdf'])
+    robot_sdf  = PathJoinSubstitution([tb3_gz, 'models', 'turtlebot3_burger', 'model.sdf'])
+
+    env = [
+        SetEnvironmentVariable('TURTLEBOT3_MODEL', 'burger'),
+        SetEnvironmentVariable('ROS_DOMAIN_ID', '30'),
+        SetEnvironmentVariable('ROS_AUTOMATIC_DISCOVERY_RANGE', 'LOCALHOST'),
+    ]
+
+    gz_gui = Node(
+        package='ros_gz_sim', executable='gz_sim', output='screen',
+        arguments=['-r', world],
+        condition=IfCondition(use_gui)
+    )
+    gz_headless = Node(
+        package='ros_gz_sim', executable='gz_sim', output='screen',
+        arguments=['-s', '-r', world],
+        condition=UnlessCondition(use_gui)
+    )
+
+    spawn = Node(
+        package='ros_gz_sim', executable='create', output='screen',
+        arguments=['-world', 'default', '-name', robot_name, '-file', robot_sdf]
+    )
+
+    bridge = Node(
+        package='ros_gz_bridge', executable='parameter_bridge', output='screen',
+        arguments=[
+            '/clock@rosgraph_msgs/msg/Clock@gz.msgs.Clock',
+            '/odom@nav_msgs/msg/Odometry@gz.msgs.Odometry',
+            '/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan',
+            '/tf@tf2_msgs/msg/TFMessage@gz.msgs.Pose_V',
+            '/cmd_vel@geometry_msgs/msg/TwistStamped@gz.msgs.Twist',
+        ]
+    )
+
+    # Use 'cat' instead of 'xacro' to avoid hard dependency if URDF is already plain XML
+    rsp = Node(
+        package='robot_state_publisher', executable='robot_state_publisher', output='screen',
+        parameters=[{
+            'use_sim_time': True,
+            'robot_description': Command(['cat', robot_urdf])
+        }]
+    )
+
+    rviz = Node(
+        package='rviz2', executable='rviz2', output='screen',
+        arguments=['-d', rviz_cfg],
+        parameters=[{'use_sim_time': True}],
+        condition=IfCondition(with_rviz)
+    )
+
+    return LaunchDescription([
+        *env,
+        DeclareLaunchArgument('use_gui', default_value=TextSubstitution(text='true')),
+        DeclareLaunchArgument('with_rviz', default_value=TextSubstitution(text='true')),
+        DeclareLaunchArgument('robot_name', default_value=TextSubstitution(text='tb3')),
+        gz_gui, gz_headless, spawn, bridge, rsp, rviz
+    ])

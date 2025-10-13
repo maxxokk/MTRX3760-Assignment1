@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<sdf version="1.8">
+  <world name="default">
+    <gravity>0 0 -9.81</gravity>
+
+    <!-- Use your local flat_ground model -->
+    <include>
+      <uri>model://flat_ground</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+
+    <!-- Include your team's maze model -->
+    <include>
+      <uri>model://maze</uri>
+      <!-- If the maze appears offset/rotated, we'll tweak this pose -->
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+  </world>
+</sdf>

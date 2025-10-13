@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<sdf version="1.8">
+  <world name="default">
+    <gravity>0 0 -9.81</gravity>
+
+    <!-- local ground -->
+    <include>
+      <uri>model://flat_ground</uri>
+      <name>ground</name>
+    </include>
+
+    <!-- local maze -->
+    <include>
+      <uri>model://maze</uri>
+      <name>maze</name>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+  </world>
+</sdf>

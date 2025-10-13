@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>maze_simulation</name>
+  <version>0.1.0</version>
+  <description>Gazebo (gz) maze worlds/models + bring-up for TurtleBot3 on ROS 2 Jazzy.</description>
+  <maintainer email="lachlan-irving@example.com">lachlan-irving</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Launch infra -->
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>ament_index_python</exec_depend>
+
+  <!-- Gazebo/bridge -->
+  <exec_depend>ros_gz_sim</exec_depend>
+  <exec_depend>ros_gz_bridge</exec_depend>
+
+  <!-- Optional: RViz -->
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>turtlebot3_gazebo</exec_depend>
+</package>

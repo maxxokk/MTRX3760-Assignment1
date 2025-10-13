@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<sdf version="1.8">
+  <model name="maze">
+    <static>true</static>
+
+    <!-- walls are 10m long, 0.2m thick, 1.0m tall -->
+    <!-- north -->
+    <link name="wall_n">
+      <pose>0 5 0.5 0 0 0</pose>
+      <collision name="col"><geometry><box><size>10 0.2 1.0</size></box></geometry></collision>
+      <visual name="vis"><geometry><box><size>10 0.2 1.0</size></box></geometry></visual>
+    </link>
+    <!-- south -->
+    <link name="wall_s">
+      <pose>0 -5 0.5 0 0 0</pose>
+      <collision name="col"><geometry><box><size>10 0.2 1.0</size></box></geometry></collision>
+      <visual name="vis"><geometry><box><size>10 0.2 1.0</size></box></geometry></visual>
+    </link>
+    <!-- east -->
+    <link name="wall_e">
+      <pose>5 0 0.5 0 0 1.57079632679</pose>
+      <collision name="col"><geometry><box><size>10 0.2 1.0</size></box></geometry></collision>
+      <visual name="vis"><geometry><box><size>10 0.2 1.0</size></box></geometry></visual>
+    </link>
+    <!-- west -->
+    <link name="wall_w">
+      <pose>-5 0 0.5 0 0 1.57079632679</pose>
+      <collision name="col"><geometry><box><size>10 0.2 1.0</size></box></geometry></collision>
+      <visual name="vis"><geometry><box><size>10 0.2 1.0</size></box></geometry></visual>
+    </link>
+    <!-- inner divider -->
+    <link name="wall_inner">
+      <pose>0 0 0.5 0 0 1.57079632679</pose>
+      <collision name="col"><geometry><box><size>6 0.2 1.0</size></box></geometry></collision>
+      <visual name="vis"><geometry><box><size>6 0.2 1.0</size></box></geometry></visual>
+    </link>
+  </model>
+</sdf>

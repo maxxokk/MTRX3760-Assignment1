@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<sdf version="1.8">
+  <world name="default">
+    <!-- Gazebo Sim systems -->
+    <gravity>0 0 -9.81</gravity>
+    <plugin filename="gz-sim-scene-broadcaster-system"   name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-sensors-system"             name="gz::sim::systems::Sensors"/>
+    <plugin filename="gz-sim-user-commands-system"       name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-physics-system"             name="gz::sim::systems::Physics"/>
+
+    <!-- Ground plane from your repo -->
+    <include>
+      <uri>model://flat_ground</uri>
+      <name>ground</name>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+
+    <!-- Your maze model -->
+    <include>
+      <uri>model://maze</uri>
+      <name>maze</name>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+  </world>
+</sdf>

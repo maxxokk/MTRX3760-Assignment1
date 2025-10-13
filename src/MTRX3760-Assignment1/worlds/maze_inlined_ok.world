@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<sdf version="1.8">
+  <world name="default">
+    <gravity>0 0 -9.81</gravity>
+
+    <!-- Flat ground; top surface at z=0 -->
+    <model name="flat_ground">
+      <static>true</static>
+      <link name="ground">
+        <pose>0 0 -0.025 0 0 0</pose>
+        <collision name="col">
+          <geometry><box><size>100 100 0.05</size></box></geometry>
+        </collision>
+        <visual name="vis">
+          <geometry><box><size>100 100 0.05</size></box></geometry>
+          <material>
+            <ambient>0.30 0.55 0.30 1</ambient>
+            <diffuse>0.30 0.55 0.30 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Simple 10x10 box + divider -->
+    <model name="maze">
+      <static>true</static>
+
+      <link name="wall_n">
+        <pose>0 5 0.5 0 0 0</pose>
+        <collision name="c"><geometry><box><size>10 0.2 1.0</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>10 0.2 1.0</size></box></geometry></visual>
+      </link>
+      <link name="wall_s">
+        <pose>0 -5 0.5 0 0 0</pose>
+        <collision name="c"><geometry><box><size>10 0.2 1.0</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>10 0.2 1.0</size></box></geometry></visual>
+      </link>
+      <link name="wall_e">
+        <pose>5 0 0.5 0 0 1.57079632679</pose>
+        <collision name="c"><geometry><box><size>10 0.2 1.0</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>10 0.2 1.0</size></box></geometry></visual>
+      </link>
+      <link name="wall_w">
+        <pose>-5 0 0.5 0 0 1.57079632679</pose>
+        <collision name="c"><geometry><box><size>10 0.2 1.0</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>10 0.2 1.0</size></box></geometry></visual>
+      </link>
+      <link name="wall_inner">
+        <pose>0 0 0.5 0 0 1.57079632679</pose>
+        <collision name="c"><geometry><box><size>6 0.2 1.0</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>6 0.2 1.0</size></box></geometry></visual>
+      </link>
+    </model>
+  </world>
+</sdf>

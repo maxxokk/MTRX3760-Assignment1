@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<sdf version="1.8">
+  <world name="default">
+    <gravity>0 0 -9.81</gravity>
+    <physics type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+
+    <!-- Ground plane so the robot doesn't yeet into the abyss -->
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/Ground Plane</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+
+    <!-- Your maze as a static model; make sure the 'maze' model exists in your GZ_SIM_RESOURCE_PATH -->
+    <model name="maze">
+      <static>1</static>
+      <include><uri>model://maze</uri></include>
+    </model>
+
+    <!-- A sun light -->
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/Sun</uri>
+    </include>
+  </world>
+</sdf>

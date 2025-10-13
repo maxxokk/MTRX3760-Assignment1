@@ -1,0 +1,36 @@
+# ROS 2 / colcon
+build/
+install/
+log/
+.colcon*
+*.log
+
+# Runtime outputs
+runs/
+support_*/
+support_*.tar.gz
+
+# Rosbag2 / data
+*.bag
+*.db3
+
+# CMake / build junk
+CMakeFiles/
+CMakeCache.txt
+cmake-build*/
+
+# Python cache
+**/__pycache__/
+*.pyc
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Archives
+*.tgz
+*.tar.gz
+*.zip

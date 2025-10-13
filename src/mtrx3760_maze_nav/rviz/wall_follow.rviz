@@ -1,0 +1,43 @@
+Panels:
+- Class: rviz_common/Displays
+- Class: rviz_common/Selection
+- Class: rviz_common/Views
+Visualization Manager:
+  Class: ""
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: odom
+    Frame Rate: 30
+  Displays:
+  - Class: rviz_default_plugins/Grid
+    Enabled: true
+  - Class: rviz_default_plugins/RobotModel
+    Enabled: true
+  - Class: rviz_default_plugins/LaserScan
+    Enabled: true
+    Name: Laser
+    Topic:
+      Value: /scan
+    Size (Pixels): 2
+    Style: Points
+  - Class: rviz_default_plugins/Path
+    Enabled: true
+    Name: TrajectoryPath
+    Topic:
+      Value: /trajectory_path
+  - Class: rviz_default_plugins/Marker
+    Enabled: true
+    Name: TrajectoryMarker
+    Topic:
+      Value: /trajectory_marker
+  Tools:
+  - Class: rviz_default_plugins/MoveCamera
+  - Class: rviz_default_plugins/Select
+  - Class: rviz_default_plugins/Measure
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 6
+      Pitch: 0.6
+      Yaw: 0.5

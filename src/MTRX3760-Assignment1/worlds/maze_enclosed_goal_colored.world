@@ -1,0 +1,3425 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.7">
+  <world name="default">
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>0 0 0</magnetic_field>
+    <model name="ground">
+      <static>true</static>
+      <link name="link">
+        <pose>0 0 0 0 0 0</pose>
+        <collision name="col">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>200 200</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>200 200</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.25 0.25 0.25 1</ambient>
+            <diffuse>0.80 0.80 0.80 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <direction>-0.5 0.1 -0.9</direction>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+    </light>
+    <model name="w_0_0">
+      <static>true</static>
+      <pose>-5.750 -3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_0_1">
+      <static>true</static>
+      <pose>-5.250 -3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_0_2">
+      <static>true</static>
+      <pose>-4.750 -3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_0_3">
+      <static>true</static>
+      <pose>-4.250 -3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_0_4">
+      <static>true</static>
+      <pose>-3.750 -3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_0_5">
+      <static>true</static>
+      <pose>-3.250 -3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_0_6">
+      <static>true</static>
+      <pose>-2.750 -3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_0_7">
+      <static>true</static>
+      <pose>-2.250 -3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_0_8">
+      <static>true</static>
+      <pose>-1.750 -3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_0_9">
+      <static>true</static>
+      <pose>-1.250 -3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_0_10">
+      <static>true</static>
+      <pose>-0.750 -3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_0_11">
+      <static>true</static>
+      <pose>-0.250 -3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_0_12">
+      <static>true</static>
+      <pose>0.250 -3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_0_13">
+      <static>true</static>
+      <pose>0.750 -3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_0_14">
+      <static>true</static>
+      <pose>1.250 -3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_0_15">
+      <static>true</static>
+      <pose>1.750 -3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_0_16">
+      <static>true</static>
+      <pose>2.250 -3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_0_17">
+      <static>true</static>
+      <pose>2.750 -3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_0_18">
+      <static>true</static>
+      <pose>3.250 -3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_0_19">
+      <static>true</static>
+      <pose>3.750 -3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_0_20">
+      <static>true</static>
+      <pose>4.250 -3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_0_21">
+      <static>true</static>
+      <pose>4.750 -3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_0_22">
+      <static>true</static>
+      <pose>5.250 -3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_0_23">
+      <static>true</static>
+      <pose>5.750 -3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_1_0">
+      <static>true</static>
+      <pose>-5.750 -3.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_1_23">
+      <static>true</static>
+      <pose>5.750 -3.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_2_0">
+      <static>true</static>
+      <pose>-5.750 -2.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_2_23">
+      <static>true</static>
+      <pose>5.750 -2.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_3_0">
+      <static>true</static>
+      <pose>-5.750 -2.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_3_23">
+      <static>true</static>
+      <pose>5.750 -2.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_4_0">
+      <static>true</static>
+      <pose>-5.750 -1.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_4_3">
+      <static>true</static>
+      <pose>-4.250 -1.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_4_4">
+      <static>true</static>
+      <pose>-3.750 -1.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_4_5">
+      <static>true</static>
+      <pose>-3.250 -1.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_4_6">
+      <static>true</static>
+      <pose>-2.750 -1.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_4_7">
+      <static>true</static>
+      <pose>-2.250 -1.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_4_8">
+      <static>true</static>
+      <pose>-1.750 -1.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_4_9">
+      <static>true</static>
+      <pose>-1.250 -1.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_4_10">
+      <static>true</static>
+      <pose>-0.750 -1.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_4_11">
+      <static>true</static>
+      <pose>-0.250 -1.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_4_12">
+      <static>true</static>
+      <pose>0.250 -1.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_4_13">
+      <static>true</static>
+      <pose>0.750 -1.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_4_14">
+      <static>true</static>
+      <pose>1.250 -1.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_4_15">
+      <static>true</static>
+      <pose>1.750 -1.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_4_16">
+      <static>true</static>
+      <pose>2.250 -1.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_4_17">
+      <static>true</static>
+      <pose>2.750 -1.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_4_18">
+      <static>true</static>
+      <pose>3.250 -1.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_4_19">
+      <static>true</static>
+      <pose>3.750 -1.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_4_20">
+      <static>true</static>
+      <pose>4.250 -1.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_4_23">
+      <static>true</static>
+      <pose>5.750 -1.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_5_0">
+      <static>true</static>
+      <pose>-5.750 -1.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_5_7">
+      <static>true</static>
+      <pose>-2.250 -1.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_5_15">
+      <static>true</static>
+      <pose>1.750 -1.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_5_23">
+      <static>true</static>
+      <pose>5.750 -1.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_6_0">
+      <static>true</static>
+      <pose>-5.750 -0.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_6_7">
+      <static>true</static>
+      <pose>-2.250 -0.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_6_15">
+      <static>true</static>
+      <pose>1.750 -0.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_6_23">
+      <static>true</static>
+      <pose>5.750 -0.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_7_0">
+      <static>true</static>
+      <pose>-5.750 -0.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_7_7">
+      <static>true</static>
+      <pose>-2.250 -0.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_7_11">
+      <static>true</static>
+      <pose>-0.250 -0.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_7_12">
+      <static>true</static>
+      <pose>0.250 -0.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_7_13">
+      <static>true</static>
+      <pose>0.750 -0.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_7_14">
+      <static>true</static>
+      <pose>1.250 -0.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_7_15">
+      <static>true</static>
+      <pose>1.750 -0.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_7_23">
+      <static>true</static>
+      <pose>5.750 -0.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_8_0">
+      <static>true</static>
+      <pose>-5.750 0.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_8_6">
+      <static>true</static>
+      <pose>-2.750 0.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_8_7">
+      <static>true</static>
+      <pose>-2.250 0.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_8_8">
+      <static>true</static>
+      <pose>-1.750 0.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_8_9">
+      <static>true</static>
+      <pose>-1.250 0.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_8_10">
+      <static>true</static>
+      <pose>-0.750 0.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_8_11">
+      <static>true</static>
+      <pose>-0.250 0.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_8_12">
+      <static>true</static>
+      <pose>0.250 0.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_8_13">
+      <static>true</static>
+      <pose>0.750 0.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_8_14">
+      <static>true</static>
+      <pose>1.250 0.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_8_15">
+      <static>true</static>
+      <pose>1.750 0.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_8_16">
+      <static>true</static>
+      <pose>2.250 0.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_8_17">
+      <static>true</static>
+      <pose>2.750 0.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_8_18">
+      <static>true</static>
+      <pose>3.250 0.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_8_19">
+      <static>true</static>
+      <pose>3.750 0.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_8_20">
+      <static>true</static>
+      <pose>4.250 0.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_8_23">
+      <static>true</static>
+      <pose>5.750 0.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_9_0">
+      <static>true</static>
+      <pose>-5.750 0.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_9_7">
+      <static>true</static>
+      <pose>-2.250 0.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_9_11">
+      <static>true</static>
+      <pose>-0.250 0.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_9_14">
+      <static>true</static>
+      <pose>1.250 0.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_9_15">
+      <static>true</static>
+      <pose>1.750 0.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_9_23">
+      <static>true</static>
+      <pose>5.750 0.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_10_0">
+      <static>true</static>
+      <pose>-5.750 1.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_10_7">
+      <static>true</static>
+      <pose>-2.250 1.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_10_11">
+      <static>true</static>
+      <pose>-0.250 1.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_10_13">
+      <static>true</static>
+      <pose>0.750 1.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_10_14">
+      <static>true</static>
+      <pose>1.250 1.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_10_15">
+      <static>true</static>
+      <pose>1.750 1.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_10_23">
+      <static>true</static>
+      <pose>5.750 1.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_11_0">
+      <static>true</static>
+      <pose>-5.750 1.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_11_7">
+      <static>true</static>
+      <pose>-2.250 1.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_11_15">
+      <static>true</static>
+      <pose>1.750 1.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_11_23">
+      <static>true</static>
+      <pose>5.750 1.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_12_0">
+      <static>true</static>
+      <pose>-5.750 2.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_12_4">
+      <static>true</static>
+      <pose>-3.750 2.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_12_5">
+      <static>true</static>
+      <pose>-3.250 2.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_12_6">
+      <static>true</static>
+      <pose>-2.750 2.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_12_7">
+      <static>true</static>
+      <pose>-2.250 2.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_12_8">
+      <static>true</static>
+      <pose>-1.750 2.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_12_9">
+      <static>true</static>
+      <pose>-1.250 2.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_12_10">
+      <static>true</static>
+      <pose>-0.750 2.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_12_11">
+      <static>true</static>
+      <pose>-0.250 2.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_12_12">
+      <static>true</static>
+      <pose>0.250 2.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_12_13">
+      <static>true</static>
+      <pose>0.750 2.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_12_14">
+      <static>true</static>
+      <pose>1.250 2.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_12_15">
+      <static>true</static>
+      <pose>1.750 2.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_12_16">
+      <static>true</static>
+      <pose>2.250 2.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_12_17">
+      <static>true</static>
+      <pose>2.750 2.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_12_18">
+      <static>true</static>
+      <pose>3.250 2.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_12_19">
+      <static>true</static>
+      <pose>3.750 2.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_12_20">
+      <static>true</static>
+      <pose>4.250 2.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_12_23">
+      <static>true</static>
+      <pose>5.750 2.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_13_0">
+      <static>true</static>
+      <pose>-5.750 2.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_13_23">
+      <static>true</static>
+      <pose>5.750 2.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_14_0">
+      <static>true</static>
+      <pose>-5.750 3.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_14_23">
+      <static>true</static>
+      <pose>5.750 3.250 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_15_0">
+      <static>true</static>
+      <pose>-5.750 3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_15_1">
+      <static>true</static>
+      <pose>-5.250 3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_15_2">
+      <static>true</static>
+      <pose>-4.750 3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_15_3">
+      <static>true</static>
+      <pose>-4.250 3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_15_4">
+      <static>true</static>
+      <pose>-3.750 3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_15_5">
+      <static>true</static>
+      <pose>-3.250 3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_15_6">
+      <static>true</static>
+      <pose>-2.750 3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_15_7">
+      <static>true</static>
+      <pose>-2.250 3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_15_8">
+      <static>true</static>
+      <pose>-1.750 3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_15_9">
+      <static>true</static>
+      <pose>-1.250 3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_15_10">
+      <static>true</static>
+      <pose>-0.750 3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_15_11">
+      <static>true</static>
+      <pose>-0.250 3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_15_12">
+      <static>true</static>
+      <pose>0.250 3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_15_13">
+      <static>true</static>
+      <pose>0.750 3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_15_14">
+      <static>true</static>
+      <pose>1.250 3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_15_15">
+      <static>true</static>
+      <pose>1.750 3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_15_16">
+      <static>true</static>
+      <pose>2.250 3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_15_17">
+      <static>true</static>
+      <pose>2.750 3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_15_18">
+      <static>true</static>
+      <pose>3.250 3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_15_19">
+      <static>true</static>
+      <pose>3.750 3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_15_20">
+      <static>true</static>
+      <pose>4.250 3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_15_21">
+      <static>true</static>
+      <pose>4.750 3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_15_22">
+      <static>true</static>
+      <pose>5.250 3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="w_15_23">
+      <static>true</static>
+      <pose>5.750 3.750 0.125 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.500 0.500 0.250</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <scene>
+      <ambient>0.3 0.3 0.3 1</ambient>
+      <background>0.7 0.7 0.75 1</background>
+    </scene>
+  </world>
+</sdf>

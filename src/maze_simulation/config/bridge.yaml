@@ -1,0 +1,34 @@
+# ROS 2 <-> Gazebo (GZ-8) bridge config
+# Flat topic names so ROS nodes can use /scan, /odom, /cmd_vel directly.
+
+# Note: TwistStamped on ROS side is preferred in Jazzy; the bridge drops the header for GZ.
+# Directions:
+#   GZ_TO_ROS  : Gazebo publishes -> ROS subscribes
+#   ROS_TO_GZ  : ROS publishes    -> Gazebo subscribes
+#   BIDIRECTIONAL only if truly needed (not here).
+
+- topic_name: /clock
+  ros_type_name: rosgraph_msgs/msg/Clock
+  gz_type_name: gz.msgs.Clock
+  direction: GZ_TO_ROS
+
+- topic_name: /scan
+  ros_type_name: sensor_msgs/msg/LaserScan
+  gz_type_name: gz.msgs.LaserScan
+  direction: GZ_TO_ROS
+
+- topic_name: /odom
+  ros_type_name: nav_msgs/msg/Odometry
+  gz_type_name: gz.msgs.Odometry
+  direction: GZ_TO_ROS
+
+- topic_name: /cmd_vel
+  ros_type_name: geometry_msgs/msg/TwistStamped
+  gz_type_name: gz.msgs.Twist
+  direction: ROS_TO_GZ
+
+# Optional but useful: bring TF into ROS if GZ is publishing poses.
+- topic_name: /tf
+  ros_type_name: tf2_msgs/msg/TFMessage
+  gz_type_name: gz.msgs.Pose_V
+  direction: GZ_TO_ROS

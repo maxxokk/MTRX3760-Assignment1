@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <world name="default">
+
+    <!-- Ground plane & Sun from Fuel -->
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/Ground Plane</uri>
+    </include>
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/Sun</uri>
+    </include>
+
+    <!-- Your maze model (model://maze resolves via GZ_SIM_RESOURCE_PATH) -->
+    <include>
+      <uri>model://maze</uri>
+      <name>maze</name>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+
+    <!-- TurtleBot3 waffle (model://turtlebot3_waffle resolves via TB3 models path) -->
+    <include>
+      <uri>model://turtlebot3_waffle</uri>
+      <name>tb3</name>
+      <pose>0 0 0.05 0 0 0</pose>
+    </include>
+
+  </world>
+</sdf>

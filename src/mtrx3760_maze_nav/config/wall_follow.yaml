@@ -1,0 +1,8 @@
+maze_navigator:
+  ros__parameters:
+    desired_wall: 0.45     # m
+    front_stop: 0.50       # m
+    lost_wall: 0.80        # m
+    lin_speed: 0.22        # m/s
+    max_ang_speed: 0.60    # rad/s
+    kp: 1.60

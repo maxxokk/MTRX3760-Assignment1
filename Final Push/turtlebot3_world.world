@@ -1,0 +1,284 @@
+<?xml version="1.0"?>
+<sdf version="1.8">
+  <world name="default">
+    <physics type="ode">
+      <real_time_update_rate>1000.0</real_time_update_rate>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>150</iters>
+          <precon_iters>0</precon_iters>
+          <sor>1.400000</sor>
+          <use_dynamic_moi_rescaling>1</use_dynamic_moi_rescaling>
+        </solver>
+        <constraints>
+          <cfm>0.00001</cfm>
+          <erp>0.2</erp>
+          <contact_max_correcting_vel>2000.000000</contact_max_correcting_vel>
+          <contact_surface_layer>0.01000</contact_surface_layer>
+        </constraints>
+      </ode>
+    </physics>
+    <plugin
+      filename="gz-sim-physics-system"
+      name="gz::sim::systems::Physics">
+    </plugin>
+    <plugin
+      filename="gz-sim-user-commands-system"
+      name="gz::sim::systems::UserCommands">
+    </plugin>
+    <plugin
+      filename="gz-sim-scene-broadcaster-system"
+      name="gz::sim::systems::SceneBroadcaster">
+    </plugin>
+    <plugin
+      filename="gz-sim-sensors-system"
+      name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin
+      filename="gz-sim-imu-system"
+      name="gz::sim::systems::Imu">
+    </plugin>
+
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Ground Plane</uri>
+    </include>
+
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Sun</uri>
+    </include>
+
+    <model name="maze">
+      <static>1</static>
+      <include>
+        <name>B2_left</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>1.2000000000 1.2000000000 0 0 0 1.57079632679</pose>
+      </include>
+      <include>
+        <name>B2_top</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>1.2000000000 0.0000000000 0 0 0 0.00000000000</pose>
+      </include>
+      <include>
+        <name>C2_top</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>2.4000000000 0.0000000000 0 0 0 0.00000000000</pose>
+      </include>
+      <include>
+        <name>D2_top</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>3.6000000000 0.0000000000 0 0 0 0.00000000000</pose>
+      </include>
+      <include>
+        <name>E2_top</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>4.8000000000 0.0000000000 0 0 0 0.00000000000</pose>
+      </include>
+      <include>
+        <name>F2_top</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>6.0000000000 0.0000000000 0 0 0 0.00000000000</pose>
+      </include>
+      <include>
+        <name>G2_left</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>7.2000000000 1.2000000000 0 0 0 1.57079632679</pose>
+      </include>
+      <include>
+        <name>B3_left</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>1.2000000000 2.4000000000 0 0 0 1.57079632679</pose>
+      </include>
+      <include>
+        <name>C3_left</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>2.4000000000 2.4000000000 0 0 0 1.57079632679</pose>
+      </include>
+      <include>
+        <name>C3_top</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>2.4000000000 1.2000000000 0 0 0 0.00000000000</pose>
+      </include>
+      <include>
+        <name>D3_top</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>3.6000000000 1.2000000000 0 0 0 0.00000000000</pose>
+      </include>
+      <include>
+        <name>E3_left</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>4.8000000000 2.4000000000 0 0 0 1.57079632679</pose>
+      </include>
+      <include>
+        <name>G3_left</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>7.2000000000 2.4000000000 0 0 0 1.57079632679</pose>
+      </include>
+      <include>
+        <name>B4_left</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>1.2000000000 3.6000000000 0 0 0 1.57079632679</pose>
+      </include>
+      <include>
+        <name>C4_top</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>2.4000000000 2.4000000000 0 0 0 0.00000000000</pose>
+      </include>
+      <include>
+        <name>D4_left</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>3.6000000000 3.6000000000 0 0 0 1.57079632679</pose>
+      </include>
+      <include>
+        <name>E4_left</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>4.8000000000 3.6000000000 0 0 0 1.57079632679</pose>
+      </include>
+      <include>
+        <name>G4_left</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>7.2000000000 3.6000000000 0 0 0 1.57079632679</pose>
+      </include>
+      <include>
+        <name>B5_left</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>1.2000000000 4.8000000000 0 0 0 1.57079632679</pose>
+      </include>
+      <include>
+        <name>C5_left</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>2.4000000000 4.8000000000 0 0 0 1.57079632679</pose>
+      </include>
+      <include>
+        <name>C5_top</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>2.4000000000 3.6000000000 0 0 0 0.00000000000</pose>
+      </include>
+      <include>
+        <name>E5_left</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>4.8000000000 4.8000000000 0 0 0 1.57079632679</pose>
+      </include>
+      <include>
+        <name>G5_left</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>7.2000000000 4.8000000000 0 0 0 1.57079632679</pose>
+      </include>
+      <include>
+        <name>B6_left</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>1.2000000000 6.0000000000 0 0 0 1.57079632679</pose>
+      </include>
+      <include>
+        <name>C6_left</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>2.4000000000 6.0000000000 0 0 0 1.57079632679</pose>
+      </include>
+      <include>
+        <name>C6_top</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>2.4000000000 4.8000000000 0 0 0 0.00000000000</pose>
+      </include>
+      <include>
+        <name>E6_top</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>4.8000000000 4.8000000000 0 0 0 0.00000000000</pose>
+      </include>
+      <include>
+        <name>F6_left</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>6.0000000000 6.0000000000 0 0 0 1.57079632679</pose>
+      </include>
+      <include>
+        <name>G6_left</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>7.2000000000 6.0000000000 0 0 0 1.57079632679</pose>
+      </include>
+      <include>
+        <name>B7_left</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>1.2000000000 7.2000000000 0 0 0 1.57079632679</pose>
+      </include>
+      <include>
+        <name>C7_top</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>2.4000000000 6.0000000000 0 0 0 0.00000000000</pose>
+      </include>
+      <include>
+        <name>D7_top</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>3.6000000000 6.0000000000 0 0 0 0.00000000000</pose>
+      </include>
+      <include>
+        <name>E7_top</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>4.8000000000 6.0000000000 0 0 0 0.00000000000</pose>
+      </include>
+      <include>
+        <name>F7_left</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>6.0000000000 7.2000000000 0 0 0 1.57079632679</pose>
+      </include>
+      <include>
+        <name>G7_left</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>7.2000000000 7.2000000000 0 0 0 1.57079632679</pose>
+      </include>
+      <include>
+        <name>B8_left</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>1.2000000000 8.4000000000 0 0 0 1.57079632679</pose>
+      </include>
+      <include>
+        <name>B8_top</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>1.2000000000 7.2000000000 0 0 0 0.00000000000</pose>
+      </include>
+      <include>
+        <name>C8_top</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>2.4000000000 7.2000000000 0 0 0 0.00000000000</pose>
+      </include>
+      <include>
+        <name>D8_top</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>3.6000000000 7.2000000000 0 0 0 0.00000000000</pose>
+      </include>
+      <include>
+        <name>F8_left</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>6.0000000000 8.4000000000 0 0 0 1.57079632679</pose>
+      </include>
+      <include>
+        <name>G8_left</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>7.2000000000 8.4000000000 0 0 0 1.57079632679</pose>
+      </include>
+      <include>
+        <name>B9_top</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>1.2000000000 8.4000000000 0 0 0 0.00000000000</pose>
+      </include>
+      <include>
+        <name>C9_top</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>2.4000000000 8.4000000000 0 0 0 0.00000000000</pose>
+      </include>
+      <include>
+        <name>D9_top</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>3.6000000000 8.4000000000 0 0 0 0.00000000000</pose>
+      </include>
+      <include>
+        <name>E9_top</name>
+        <uri>https://fuel.gazebosim.org/1.0/NGD1004/models/NIST maze wall 120</uri>
+        <pose>4.8000000000 8.4000000000 0 0 0 0.00000000000</pose>
+      </include>
+    </model>
+
+  </world>
+</sdf>

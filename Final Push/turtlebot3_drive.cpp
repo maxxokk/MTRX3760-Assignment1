@@ -46,7 +46,7 @@ static const cv::Scalar kHSVLower = cv::Scalar(45,  80, 80);   // ~green lower
 static const cv::Scalar kHSVUpper = cv::Scalar(85, 255, 255);  // ~green upper
 
 // Minimal fraction of image pixels that must match to count as "seen"
-static constexpr double kMinAreaFraction = 0.50; // 3%
+static constexpr double kMinAreaFraction = 0.10; // 10%
 
 // Optional morphology to clean the mask
 static constexpr int kMorphKernel = 3;
